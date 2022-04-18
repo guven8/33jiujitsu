@@ -1,6 +1,6 @@
 import { Flex, Text } from '@chakra-ui/react';
 import Link from 'next/link';
-import router from 'next/router';
+import { useRouter } from 'next/router';
 import { BsInstagram } from 'react-icons/bs';
 
 type P = {
@@ -8,6 +8,8 @@ type P = {
 };
 
 export default function DesktopMenu(props: P) {
+  const router = useRouter();
+
   return (
     <Flex gap="30px" align="center" display={['none', 'none', 'flex']}>
       {props.navLinks.map((item) => {
