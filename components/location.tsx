@@ -5,7 +5,12 @@ import Map from './map';
 export default function Location() {
   return (
     <InfoSection id="location">
-      <Heading as="h4" size="2xl" mb="40px" fontFamily="inherit">
+      <Heading
+        as="h4"
+        size="2xl"
+        mb={['0px', '10px', '10px', '40px']}
+        fontFamily="inherit"
+      >
         Location
       </Heading>
       <Stack gap="20px">

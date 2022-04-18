@@ -41,8 +41,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Fade in={headingVisible}>
-        <Box pos="absolute" pt="200px" width="100%" zIndex="100">
-          <Text color="white" fontSize="8xl" fontWeight="extrabold">
+        <Box pos="absolute" mt="200px" width="100%" zIndex="100">
+          <Text
+            color="white"
+            fontSize={['6xl', '8xl', '8xl', '8xl']}
+            fontWeight="extrabold"
+          >
             柔<br />術<br /> 33 Jiu Jitsu
           </Text>
         </Box>
