@@ -6,7 +6,7 @@ export default function InfoSection(props: PropsWithChildren<{ id: string }>) {
     <Container
       id={props.id}
       maxW="4xl"
-      py={['50px', '50px', '80px', '120px']}
+      py={['100px', '100px', '80px', '120px']}
       px="20px"
     >
       {props.children}

@@ -33,7 +33,7 @@ export default function Map() {
         pos="absolute"
         top="10px"
         left="10px"
-        zIndex="100"
+        zIndex="1"
         color="black"
         fontSize="large"
         hidden={!recenterVisible}

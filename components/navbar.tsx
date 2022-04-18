@@ -21,7 +21,7 @@ export default function Navbar() {
       w="100%"
       bg="blackAlpha.800"
       px={['20px', '40px', '40px', '60px', '100px']}
-      zIndex="1"
+      zIndex="100"
     >
       <Box>
         <Link href="/" passHref>
