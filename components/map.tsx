@@ -10,7 +10,6 @@ export default function Map() {
   const map = useRef<mapboxgl.Map | null>(null);
   const gymLocation = [-0.1130915, 51.5858301];
   const [recenterVisible, setRecentreVisible] = useState(false);
-  const [pinVisible, setPinVisible] = useState(true);
 
   useEffect(() => {
     if (map.current) return;
@@ -22,12 +21,10 @@ export default function Map() {
     });
     map.current.on('move', () => {
       setRecentreVisible(true);
-      setPinVisible(false);
     });
   });
   const handleRecentre = () => {
     map.current?.setCenter(gymLocation as any);
-    setPinVisible(true);
   };
 
   return (
@@ -54,7 +51,6 @@ export default function Map() {
         zIndex="100"
         left="calc(50% - 20px)"
         top="calc(50% - 20px)"
-        hidden={!pinVisible}
       />
     </Box>
   );
